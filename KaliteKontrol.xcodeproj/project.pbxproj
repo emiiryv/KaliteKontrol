@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D20633F42DCE8FBB00233214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20633DB2DCE8FB900233214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20633E22DCE8FB900233214;
+			remoteInfo = KaliteKontrol;
+		};
+		D20633FE2DCE8FBB00233214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20633DB2DCE8FB900233214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20633E22DCE8FB900233214;
+			remoteInfo = KaliteKontrol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D20633E32DCE8FB900233214 /* KaliteKontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaliteKontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20633F32DCE8FBB00233214 /* KaliteKontrolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaliteKontrolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20633FD2DCE8FBB00233214 /* KaliteKontrolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaliteKontrolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D20633E52DCE8FB900233214 /* KaliteKontrol */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KaliteKontrol;
+			sourceTree = "<group>";
+		};
+		D20633F62DCE8FBB00233214 /* KaliteKontrolTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KaliteKontrolTests;
+			sourceTree = "<group>";
+		};
+		D20634002DCE8FBB00233214 /* KaliteKontrolUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KaliteKontrolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20633E02DCE8FB900233214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633F02DCE8FBB00233214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633FA2DCE8FBB00233214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20633DA2DCE8FB900233214 = {
+			isa = PBXGroup;
+			children = (
+				D20633E52DCE8FB900233214 /* KaliteKontrol */,
+				D20633F62DCE8FBB00233214 /* KaliteKontrolTests */,
+				D20634002DCE8FBB00233214 /* KaliteKontrolUITests */,
+				D20633E42DCE8FB900233214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20633E42DCE8FB900233214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20633E32DCE8FB900233214 /* KaliteKontrol.app */,
+				D20633F32DCE8FBB00233214 /* KaliteKontrolTests.xctest */,
+				D20633FD2DCE8FBB00233214 /* KaliteKontrolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D20633E22DCE8FB900233214 /* KaliteKontrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20634072DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrol" */;
+			buildPhases = (
+				D20633DF2DCE8FB900233214 /* Sources */,
+				D20633E02DCE8FB900233214 /* Frameworks */,
+				D20633E12DCE8FB900233214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D20633E52DCE8FB900233214 /* KaliteKontrol */,
+			);
+			name = KaliteKontrol;
+			packageProductDependencies = (
+			);
+			productName = KaliteKontrol;
+			productReference = D20633E32DCE8FB900233214 /* KaliteKontrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D20633F22DCE8FBB00233214 /* KaliteKontrolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D206340A2DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrolTests" */;
+			buildPhases = (
+				D20633EF2DCE8FBB00233214 /* Sources */,
+				D20633F02DCE8FBB00233214 /* Frameworks */,
+				D20633F12DCE8FBB00233214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20633F52DCE8FBB00233214 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D20633F62DCE8FBB00233214 /* KaliteKontrolTests */,
+			);
+			name = KaliteKontrolTests;
+			packageProductDependencies = (
+			);
+			productName = KaliteKontrolTests;
+			productReference = D20633F32DCE8FBB00233214 /* KaliteKontrolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D20633FC2DCE8FBB00233214 /* KaliteKontrolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D206340D2DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrolUITests" */;
+			buildPhases = (
+				D20633F92DCE8FBB00233214 /* Sources */,
+				D20633FA2DCE8FBB00233214 /* Frameworks */,
+				D20633FB2DCE8FBB00233214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20633FF2DCE8FBB00233214 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D20634002DCE8FBB00233214 /* KaliteKontrolUITests */,
+			);
+			name = KaliteKontrolUITests;
+			packageProductDependencies = (
+			);
+			productName = KaliteKontrolUITests;
+			productReference = D20633FD2DCE8FBB00233214 /* KaliteKontrolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D20633DB2DCE8FB900233214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D20633E22DCE8FB900233214 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D20633F22DCE8FBB00233214 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D20633E22DCE8FB900233214;
+					};
+					D20633FC2DCE8FBB00233214 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D20633E22DCE8FB900233214;
+					};
+				};
+			};
+			buildConfigurationList = D20633DE2DCE8FB900233214 /* Build configuration list for PBXProject "KaliteKontrol" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D20633DA2DCE8FB900233214;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D20633E42DCE8FB900233214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20633E22DCE8FB900233214 /* KaliteKontrol */,
+				D20633F22DCE8FBB00233214 /* KaliteKontrolTests */,
+				D20633FC2DCE8FBB00233214 /* KaliteKontrolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20633E12DCE8FB900233214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633F12DCE8FBB00233214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633FB2DCE8FBB00233214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D20633DF2DCE8FB900233214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633EF2DCE8FBB00233214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20633F92DCE8FBB00233214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20633F52DCE8FBB00233214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20633E22DCE8FB900233214 /* KaliteKontrol */;
+			targetProxy = D20633F42DCE8FBB00233214 /* PBXContainerItemProxy */;
+		};
+		D20633FF2DCE8FBB00233214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20633E22DCE8FB900233214 /* KaliteKontrol */;
+			targetProxy = D20633FE2DCE8FBB00233214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D20634052DCE8FBB00233214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20634062DCE8FBB00233214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D20634082DCE8FBB00233214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KaliteKontrol/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D20634092DCE8FBB00233214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KaliteKontrol/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D206340B2DCE8FBB00233214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaliteKontrol.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KaliteKontrol";
+			};
+			name = Debug;
+		};
+		D206340C2DCE8FBB00233214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaliteKontrol.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KaliteKontrol";
+			};
+			name = Release;
+		};
+		D206340E2DCE8FBB00233214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaliteKontrol;
+			};
+			name = Debug;
+		};
+		D206340F2DCE8FBB00233214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doproje.KaliteKontrolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaliteKontrol;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D20633DE2DCE8FB900233214 /* Build configuration list for PBXProject "KaliteKontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20634052DCE8FBB00233214 /* Debug */,
+				D20634062DCE8FBB00233214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20634072DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20634082DCE8FBB00233214 /* Debug */,
+				D20634092DCE8FBB00233214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D206340A2DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D206340B2DCE8FBB00233214 /* Debug */,
+				D206340C2DCE8FBB00233214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D206340D2DCE8FBB00233214 /* Build configuration list for PBXNativeTarget "KaliteKontrolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D206340E2DCE8FBB00233214 /* Debug */,
+				D206340F2DCE8FBB00233214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D20633DB2DCE8FB900233214 /* Project object */;
+}
