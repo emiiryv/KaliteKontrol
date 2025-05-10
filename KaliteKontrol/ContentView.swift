@@ -6,30 +6,34 @@ struct ContentView: View {
     @State private var predictionColor: Color = .gray
     @State private var isLoading: Bool = false
     @State private var showImagePicker = false
+    @State private var showCameraPicker = false
+    @State private var showActionSheet = false
     @State private var showHistory = false
-    @State private var selectedFilter: String = "Tümü" // Geçmişi filtrelemek için
+    @State private var selectedFilter: String = "Tümü"
     let filterOptions = ["Tümü", "Çatlama", "Kapsama", "Yamalar", "Çukur Yüzey", "Hadde Kabukları", "Çizikler"]
     
-    // Sonuç Geçmişi Dizisi
     @State private var predictionHistory: [HistoryEntry] = []
     
     let classNames = [
-        "Çatlama",            // 0 - Crazing
-        "Kapsama",            // 1 - Inclusion
-        "Yamalar",            // 2 - Patches
-        "Çukur Yüzey",        // 3 - Pitted Surface
-        "Hadde Kabukları",    // 4 - Rolled-in Scale
-        "Çizikler"            // 5 - Scratches
+        "Çatlama", "Kapsama", "Yamalar", "Çukur Yüzey", "Hadde Kabukları", "Çizikler"
     ]
     
     var body: some View {
-        NavigationView {
+        ZStack {
+            // Arka Plan Gradient
+            LinearGradient(
+                gradient: Gradient(colors: [Color.purple.opacity(0.7), Color.blue.opacity(0.8)]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea(.all)
+            
             VStack(spacing: 20) {
-                Text("Kalite Kontrol Modeli")
+                Text("Kalite Kontrol")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding(.top, 20)
+                    .shadow(radius: 5)
                 
                 if let image = selectedImage {
                     Image(uiImage: image)
@@ -43,7 +47,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200, height: 200)
-                        .foregroundColor(.white.opacity(0.7))
+                        .foregroundColor(.white.opacity(0.6))
                 }
                 
                 if isLoading {
@@ -63,55 +67,66 @@ struct ContentView: View {
                 
                 HStack {
                     Button(action: {
-                        showImagePicker = true
+                        showActionSheet = true
                     }) {
-                        Text("Görsel Seç")
+                        Text("Görsel Ekle")
                             .fontWeight(.bold)
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
-                            .cornerRadius(12)
+                            .cornerRadius(16)
+                            .shadow(radius: 5)
                     }
-                    
-                    Button(action: {
-                        if let image = selectedImage {
-                            predictImage(image: image)
-                        }
-                    }) {
-                        Text("Tahmin Et")
-                            .fontWeight(.bold)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(selectedImage == nil ? Color.gray : Color.green)
-                            .foregroundColor(.white)
-                            .cornerRadius(12)
-                    }
-                    .disabled(selectedImage == nil)
                 }
+                .actionSheet(isPresented: $showActionSheet) {
+                    ActionSheet(title: Text("Görsel Seç"), message: Text("Fotoğraf Çek veya Galeriden Seç"), buttons: [
+                        .default(Text("Kamera ile Çek")) {
+                            showCameraPicker = true
+                        },
+                        .default(Text("Galeriden Seç")) {
+                            showImagePicker = true
+                        },
+                        .cancel()
+                    ])
+                }
+                .sheet(isPresented: $showImagePicker) {
+                    ImagePicker(image: $selectedImage)
+                }
+                .sheet(isPresented: $showCameraPicker) {
+                    CameraPicker(image: $selectedImage)
+                }
+                
+                Button(action: {
+                    if let image = selectedImage {
+                        predictImage(image: image)
+                    }
+                }) {
+                    Text("Tahmin Et")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(selectedImage == nil ? Color.gray : Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(16)
+                        .shadow(radius: 5)
+                }
+                .disabled(selectedImage == nil)
                 .padding(.horizontal)
                 
-                // Geçmişi Görüntüle Butonu
                 Button("Sonuç Geçmişi") {
                     showHistory = true
                 }
                 .padding()
-                .foregroundColor(.blue)
-                .background(Color.white.opacity(0.2))
-                .cornerRadius(12)
+                .foregroundColor(.white)
+                .background(Color.blue.opacity(0.8))
+                .cornerRadius(16)
+                .shadow(radius: 5)
                 .sheet(isPresented: $showHistory) {
                     PredictionHistoryView(history: $predictionHistory)
                 }
             }
             .padding()
-            .background(
-                LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.purple.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
-                    .ignoresSafeArea()
-            )
-            .navigationTitle("Kalite Kontrol")
-            .sheet(isPresented: $showImagePicker) {
-                ImagePicker(image: $selectedImage)
-            }
         }
         .onAppear {
             loadHistory()
@@ -136,7 +151,6 @@ struct ContentView: View {
                     self.predictionResult = "Sınıf: \(className)\nGüven: \(String(format: "%.2f", confidence * 100))%"
                     self.predictionColor = confidence >= 0.8 ? .green : (confidence >= 0.5 ? .yellow : .red)
                     
-                    // Sonuç Geçmişine Kaydet
                     let newEntry = HistoryEntry.create(
                         from: image,
                         result: className,
