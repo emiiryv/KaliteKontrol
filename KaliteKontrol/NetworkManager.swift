@@ -47,19 +47,9 @@ class NetworkManager {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                if let prediction = json?["prediction"] as? [[Any]] {
-                    print("Prediction Array:", prediction)
-                    let predictedValues = prediction.first?.compactMap { value -> Double? in
-                        if let stringValue = value as? String {
-                            return Double(stringValue)
-                        } else if let doubleValue = value as? Double {
-                            return doubleValue
-                        } else {
-                            return nil
-                        }
-                    }
-                    
-                    guard let values = predictedValues, !values.isEmpty else {
+                if let prediction = json?["prediction"] as? [[Double]], let values = prediction.first {
+                    print("Prediction Values:", values)
+                    guard !values.isEmpty else {
                         DispatchQueue.main.async {
                             completion("Hata: Tahminler Boş")
                         }
@@ -71,10 +61,10 @@ class NetworkManager {
                     DispatchQueue.main.async {
                         completion("\(index) - \(highestValue)")
                     }
-                    return
-                }
-                DispatchQueue.main.async {
-                    completion("Hata: Yanıt Beklenen Format Değil")
+                } else {
+                    DispatchQueue.main.async {
+                        completion("Hata: Yanıt Beklenen Format Değil")
+                    }
                 }
             } catch {
                 DispatchQueue.main.async {
